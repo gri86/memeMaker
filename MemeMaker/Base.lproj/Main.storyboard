@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MemeMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="8QU-y3-izk">
+                                <rect key="frame" x="82" y="253" width="250" height="390"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Feq-ad-p78">
+                                        <rect key="frame" x="64.5" y="0.0" width="121" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="7Oh-Rh-Z2s"/>
+                                            <constraint firstAttribute="width" constant="121" id="dGf-VG-pBx"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="topSegmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="QAf-v2-MMF"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0P-yw-kb1">
+                                        <rect key="frame" x="0.0" y="38" width="250" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="Sga-xL-5IC"/>
+                                            <constraint firstAttribute="height" constant="21" id="by7-Jg-NXx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" highlightedImage="1" translatesAutoresizingMaskIntoConstraints="NO" id="ltP-nQ-x9T">
+                                        <rect key="frame" x="0.0" y="70" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="Ns5-ck-7HJ"/>
+                                            <constraint firstAttribute="height" constant="250" id="Oa3-oW-HxB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYE-Ik-enN">
+                                        <rect key="frame" x="25" y="331" width="200" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="OK2-cx-8vM"/>
+                                            <constraint firstAttribute="width" constant="200" id="rWh-sb-suX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mlV-Nj-0H6">
+                                        <rect key="frame" x="64.5" y="363" width="121" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="121" id="IsR-DH-OVv"/>
+                                            <constraint firstAttribute="height" constant="27" id="OaH-G7-9pX"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="bottomSegmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="VC5-pn-IjE"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8QU-y3-izk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2TX-BQ-OY1"/>
+                            <constraint firstItem="8QU-y3-izk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="S2U-uK-26C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomCaptionLable" destination="LYE-Ik-enN" id="7Cr-dh-H7r"/>
+                        <outlet property="bottomCaptionSegmentedControl" destination="mlV-Nj-0H6" id="bCq-N0-TCm"/>
+                        <outlet property="mainImageView" destination="ltP-nQ-x9T" id="W95-Mk-nwc"/>
+                        <outlet property="topCaptionLable" destination="M0P-yw-kb1" id="Fgm-1g-ADk"/>
+                        <outlet property="topCaptionSegmentedControl" destination="Feq-ad-p78" id="svi-a0-eU5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="1920" height="1200"/>
+    </resources>
+</document>
